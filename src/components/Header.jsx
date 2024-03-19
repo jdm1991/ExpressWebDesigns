@@ -1,104 +1,78 @@
-import { useState } from "react";
-import { Link, Routes, Route } from "react-router-dom";
-import {
-  FaHome,
-  FaServicestack,
-  FaBriefcase,
-  FaEnvelope,
-  FaUsers,
-  FaBars,
-  FaTimes,
-} from "react-icons/fa";
-import logo2 from "../assets/logo2.png";
+import React from "react";
+import { Link } from "react-router-dom";
+import { Home, HardDrive, List, Folder, DollarSign, Mail } from "react-feather";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <>
-      <header className="bg-[#255036] py-4 px-8 border-b-2 border-[#ffcf40] h-[16vh] flex items-center justify-between">
-        <nav className="flex flex-row items-center justify-between w-full max-w-7xl">
-          <div className="flex items-center">
-            <img
-              src={logo2}
-              alt="Logo2"
-              className="h-4rem w-5rem md:h-5rem md:w-5rem"
-            />
-          </div>
-          <div className="flex items-end">
-            <div className="md:hidden">
-              <button
-                onClick={toggleMenu}
-                className="text-white text-2xl focus:outline-none"
+      <div className="bg-[#255036] text-right  text-white px-8 sticky top-0 left-0 right-0 shadow-lg flex items-center justify-between h-40">
+        <div className="text-lg font-bold flex items-center">
+          <img
+            src="src/assets/CroppedLogo.jpeg"
+            alt="Pic2"
+            className="logo-image h-20 w-auto"
+          />
+        </div>
+        <nav className="flex items-center h-full">
+          <ul className="flex">
+            <li className="group">
+              <Link
+                to="/"
+                className="flex flex-col gap-1.5 items-center justify-center h-14 w-40 text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
               >
-                {isOpen ? <FaTimes /> : <FaBars />}
-              </button>
-            </div>
-            <ul
-              className={`${
-                isOpen ? "flex" : "hidden"
-              } md:flex flex-row space-x-12 mt-4 md:mt-0`}
-            >
-              <li>
-                <Link
-                  to="/"
-                  className="flex items-end text-white text-xl hover:text-[#ffcf40] hover:scale-125 transition duration-300"
-                >
-                  <FaHome className="mr-2" />
-                  <span>Home</span>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/service"
-                  className="flex items-center text-white text-xl hover:text-[#ffcf40] hover:scale-125 transition duration-300"
-                >
-                  <FaServicestack className="mr-2" />
-                  <span>Service</span>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/portfolio"
-                  className="flex items-center text-white text-xl hover:text-[#ffcf40] hover:scale-125 transition duration-300"
-                >
-                  <FaBriefcase className="mr-2" />
-                  <span>Portfolio</span>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="flex items-center text-white text-xl hover:text-[#ffcf40] hover:scale-125 transition duration-300"
-                >
-                  <FaEnvelope className="mr-2" />
-                  <span>Contact</span>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="flex items-center text-white text-xl hover:text-[#ffcf40] hover:scale-125 transition duration-300"
-                >
-                  <FaUsers className="mr-2" />
-                  <span>About Us</span>
-                </Link>
-              </li>
-            </ul>
-          </div>
+                <Home />
+                <span>Home</span>
+              </Link>
+            </li>
+            <li className="group">
+              <Link
+                to="/about"
+                className="flex flex-col gap-1.5 items-center justify-center h-14 w-40 text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
+              >
+                <HardDrive />
+                <span>About</span>
+              </Link>
+            </li>
+            <li className="group">
+              <Link
+                to="/services"
+                className="flex flex-col gap-1.5 items-center justify-center h-14 w-40 text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
+              >
+                <List />
+                <span>Services</span>
+              </Link>
+            </li>
+            <li className="group">
+              <Link
+                to="/projects"
+                className="flex flex-col gap-1.5 items-center justify-center h-14 w-40 text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
+              >
+                <Folder />
+                <span>Projects</span>
+              </Link>
+            </li>
+            <li className="group">
+              <Link
+                to="/prices"
+                className="flex flex-col gap-1.5 items-center justify-center h-14 w-40 text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
+              >
+                <DollarSign />
+                <span>Prices</span>
+              </Link>
+            </li>
+            <li className="group">
+              <Link
+                to="/contact"
+                className="flex flex-col gap-1.5 items-center justify-center h-14 w-40 text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
+              >
+                <Mail />
+                <span>Contact</span>
+              </Link>
+            </li>
+          </ul>
         </nav>
-      </header>
-      <Routes>
-        <Route path="/" />
-        <Route path="/service" />
-        <Route path="/portfolio" />
-        <Route path="/about" />
-        <Route path="/contact" />
-      </Routes>
+      </div>
+      
     </>
   );
 }
