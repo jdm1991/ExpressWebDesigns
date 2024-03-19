@@ -9,7 +9,7 @@ export default function PriceTable(){
             {/* Basic Plan */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <h2 className="text-2xl font-bold mb-4">Basic Plan</h2>
-              <p className="text-4xl font-bold mb-4">$999</p>
+              <p className="text-4xl font-bold mb-4">£999</p>
               <ul className="text-left mb-8">
                 <li className="flex items-center mb-2">
                   <FaCheck className="text-[#ffcf40] mr-2" />
@@ -36,7 +36,7 @@ export default function PriceTable(){
             {/* Standard Plan */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <h2 className="text-2xl font-bold mb-4">Standard Plan</h2>
-              <p className="text-4xl font-bold mb-4">$1,999</p>
+              <p className="text-4xl font-bold mb-4">£1,999</p>
               <ul className="text-left mb-8">
                 <li className="flex items-center mb-2">
                   <FaCheck className="text-[#ffcf40] mr-2" />
@@ -67,7 +67,7 @@ export default function PriceTable(){
             {/* Premium Plan */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <h2 className="text-2xl font-bold mb-4">Premium Plan</h2>
-              <p className="text-4xl font-bold mb-4">$3,999</p>
+              <p className="text-4xl font-bold mb-4">£3,999</p>
               <ul className="text-left mb-8">
                 <li className="flex items-center mb-2">
                   <FaCheck className="text-[#ffcf40] mr-2" />
