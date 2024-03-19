@@ -23,12 +23,12 @@ export default function Header() {
       <div className="bg-[#255036] text-right text-white px-8 sticky top-0 left-0 right-0 shadow-lg flex items-center justify-between h-40 z-50">
         <div className="text-lg font-bold flex items-center">
           <img
-            src="src/assets/CroppedLogo.jpeg"
+            src="src/assets/logo2.png"
             alt="Pic2"
-            className="logo-image h-20 w-auto"
+            className="logo-image h-80 w-auto"
           />
         </div>
-        <nav className="hidden lg:flex items-center h-full">
+        <nav className="hidden xl:flex items-center h-full">
           <ul className="flex">
             <li className="group">
               <Link
@@ -87,14 +87,14 @@ export default function Header() {
           </ul>
         </nav>
         <button
-          className="lg:hidden text-white focus:outline-none"
+          className="xl:hidden text-white focus:outline-none"
           onClick={toggleMenu}
         >
           {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </div>
       {isOpen && (
-        <div className="lg:hidden bg-[#255036] text-white px-8 py-4 fixed top-40 right-0 w-full z-50 transition-all duration-300 ease-in-out">
+        <div className="xl:hidden bg-[#255036] text-white px-8 py-4 fixed top-40 right-0 w-full z-50 transition-all duration-300 ease-in-out">
           <ul className="flex flex-col space-y-4">
             <li>
               <Link
@@ -153,7 +153,7 @@ export default function Header() {
                 onClick={toggleMenu}
               >
                 <Mail className="mr-2" />
-                <span>Contact</span>  
+                <span>Contact</span>
               </Link>
             </li>
           </ul>
