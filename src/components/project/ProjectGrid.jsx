@@ -1,4 +1,7 @@
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import LandRover from "../../../public/LandRover.jpg"
+import project1 from "../../../public/project1.jpg"
+import project2 from "../../../public/project2.jpg"
 
 export default function ProjectGrid(){
     const projects = [
@@ -7,7 +10,7 @@ export default function ProjectGrid(){
           title: 'E-commerce Website',
           description: 'A fully functional e-commerce website with a sleek design and seamless user experience.',
           technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
-          image: '/path/to/project1.jpg',
+          image: LandRover,
           githubLink: 'https://github.com/example/project1',
           liveLink: 'https://example.com/project1',
         },
@@ -16,7 +19,7 @@ export default function ProjectGrid(){
           title: 'Portfolio Website',
           description: 'A stunning portfolio website showcasing the work and skills of a talented artist.',
           technologies: ['HTML', 'CSS', 'JavaScript'],
-          image: '/path/to/project2.jpg',
+          image: project1,
           githubLink: 'https://github.com/example/project2',
           liveLink: 'https://example.com/project2',
         },
@@ -25,7 +28,7 @@ export default function ProjectGrid(){
           title: 'Task Management App',
           description: 'An intuitive task management application to help users stay organized and productive.',
           technologies: ['Vue.js', 'Firebase'],
-          image: '/path/to/project3.jpg',
+          image: project2,
           githubLink: 'https://github.com/example/project3',
           liveLink: 'https://example.com/project3',
         },
