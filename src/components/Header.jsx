@@ -153,7 +153,7 @@ export default function Header() {
                 onClick={toggleMenu}
               >
                 <Mail className="mr-2" />
-                <span>Contact</span>
+                <span>Contact</span>  
               </Link>
             </li>
           </ul>
