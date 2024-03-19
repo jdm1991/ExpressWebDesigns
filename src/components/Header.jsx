@@ -1,7 +1,23 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Home, HardDrive, List, Folder, DollarSign, Mail } from "react-feather";
+import {
+  Home,
+  HardDrive,
+  List,
+  Folder,
+  DollarSign,
+  Mail,
+  Menu,
+  X,
+} from "react-feather";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <div className="bg-[#255036] text-right text-white px-8 sticky top-0 left-0 right-0 shadow-lg flex items-center justify-between h-40 z-50">
@@ -12,7 +28,7 @@ export default function Header() {
             className="logo-image h-20 w-auto"
           />
         </div>
-        <nav className="flex items-center h-full">
+        <nav className="hidden lg:flex items-center h-full">
           <ul className="flex">
             <li className="group">
               <Link
@@ -70,7 +86,79 @@ export default function Header() {
             </li>
           </ul>
         </nav>
+        <button
+          className="lg:hidden text-white focus:outline-none"
+          onClick={toggleMenu}
+        >
+          {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        </button>
       </div>
+      {isOpen && (
+        <div className="lg:hidden bg-[#255036] text-white px-8 py-4 fixed top-40 right-0 w-full z-50 transition-all duration-300 ease-in-out">
+          <ul className="flex flex-col space-y-4">
+            <li>
+              <Link
+                to="/"
+                className="flex items-center text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
+                onClick={toggleMenu}
+              >
+                <Home className="mr-2" />
+                <span>Home</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about"
+                className="flex items-center text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
+                onClick={toggleMenu}
+              >
+                <HardDrive className="mr-2" />
+                <span>About</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/service"
+                className="flex items-center text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
+                onClick={toggleMenu}
+              >
+                <List className="mr-2" />
+                <span>Services</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/project"
+                className="flex items-center text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
+                onClick={toggleMenu}
+              >
+                <Folder className="mr-2" />
+                <span>Projects</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/prices"
+                className="flex items-center text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
+                onClick={toggleMenu}
+              >
+                <DollarSign className="mr-2" />
+                <span>Prices</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                className="flex items-center text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
+                onClick={toggleMenu}
+              >
+                <Mail className="mr-2" />
+                <span>Contact</span>
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </>
   );
 }
