@@ -1,4 +1,4 @@
-import React from 'react';
+
 import ContactHero from "./contact/ContactHero"
 import Info from "./contact/Info"
 import Map from "./contact/Map"
@@ -23,5 +23,5 @@ export default function ContactPage (){
      <ContactAction />
     </div>
   );
-};
+}
 
