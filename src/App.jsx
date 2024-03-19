@@ -6,6 +6,7 @@ import ServicePage from "./components/ServicePage";
 import PricePage from "./components/PricePage";
 import AboutUs from "./components/AboutUs";
 import { Routes, Route } from "react-router-dom";
+import ProjectPage from "./components/ProjectPage";
 
 export default function App() {
   return (
@@ -53,6 +54,17 @@ export default function App() {
             <Footer />
           </>
         }
+          />
+          <Route
+          path="/project"
+          element={
+            <>
+              <Header />
+              <ProjectPage />
+              <Footer />
+            </>
+          }
+
           />
       </Routes>
     </>
