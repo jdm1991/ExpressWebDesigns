@@ -1,7 +1,7 @@
 export default function Intro(){
     return(
         <>
-         <div className="bg-[#255036] text-white py-12 rounded-lg shadow-lg mb-12">
+         <div className="bg-[#255036] text-white py-12 px-5 shadow-lg mb-12">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl font-bold mb-8">About Us</h1>
             <p className="text-xl mb-8">
