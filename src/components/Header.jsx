@@ -35,7 +35,7 @@ export default function Header() {
             </li>
             <li className="group">
               <Link
-                to="/services"
+                to="/service"
                 className="flex flex-col gap-1.5 items-center justify-center h-14 w-40 text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
               >
                 <List />

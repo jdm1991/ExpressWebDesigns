@@ -57,7 +57,7 @@ export default function ServicePage(){
             We follow a structured and collaborative process to ensure the success of your web design project. Here's how we work:
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <FaCheckCircle className="text-4xl text-[#ffcf40] mb-4" />
             <h3 className="text-xl font-bold mb-2">1. Discovery</h3>
@@ -102,6 +102,7 @@ export default function ServicePage(){
           </div>
         </div>
       </div>
+
 
       {/* Section 3: Pricing */}
       <div className="bg-[#255036] text-white py-12">
@@ -186,7 +187,7 @@ export default function ServicePage(){
 
       {/* Section 5: FAQ */}
       <div className="bg-[#255036] text-white py-12">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
           <div className="space-y-6">
             <div>
