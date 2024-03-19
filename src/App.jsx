@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ContactPage from "./components/ContactPage";
 import ServicePage from "./components/ServicePage";
+import PricePage from "./components/PricePage";
 import AboutUs from "./components/AboutUs";
 import { Routes, Route } from "react-router-dom";
 
@@ -42,6 +43,17 @@ export default function App() {
           </>
         }
         />
+
+        <Route 
+        path="/prices"
+        element={
+          <>
+            <Header />
+            <PricePage />
+            <Footer />
+          </>
+        }
+          />
       </Routes>
     </>
   );
