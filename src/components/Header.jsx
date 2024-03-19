@@ -1,11 +1,10 @@
-
 import { Link } from "react-router-dom";
 import { Home, HardDrive, List, Folder, DollarSign, Mail } from "react-feather";
 
 export default function Header() {
   return (
     <>
-      <div className="bg-[#255036] text-right  text-white px-8 sticky top-0 left-0 right-0 shadow-lg flex items-center justify-between h-40">
+      <div className="bg-[#255036] text-right text-white px-8 sticky top-0 left-0 right-0 shadow-lg flex items-center justify-between h-40 z-50">
         <div className="text-lg font-bold flex items-center">
           <img
             src="src/assets/CroppedLogo.jpeg"
@@ -72,7 +71,6 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-      
     </>
   );
 }
