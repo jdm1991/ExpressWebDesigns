@@ -94,7 +94,7 @@ export default function Header() {
         </button>
       </div>
       {isOpen && (
-        <div className="xl:hidden bg-[#255036] text-white px-8 py-4 fixed top-40 right-0 w-full z-50 transition-all duration-300 ease-in-out">
+        <div className="xl:hidden bg-[#255036] text-white px-8 py-4 fixed top-20 right-0 w-full z-50 transition-all duration-300 ease-in-out">
           <ul className="flex flex-col space-y-4">
             <li>
               <Link
