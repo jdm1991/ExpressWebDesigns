@@ -14,9 +14,13 @@ export default function AdditionalService() {
                 We offer professional logo design services to create a unique
                 and memorable visual identity for your brand.
               </p>
-              <p className="text-2xl font-bold">Starting at $500</p>
+              <p className="text-2xl font-bold">
+                Starting at{" "}
+                <span className="text-[#ffcf40] text-shadow-[0_0_2px_#255036]">
+                  $500
+                </span>
+              </p>
             </div>
-
             {/* Service 2 */}
             <div className="bg-white text-[#255036] p-8 rounded-lg shadow-lg">
               <h3 className="text-xl font-bold mb-4">Content Writing</h3>
@@ -25,7 +29,13 @@ export default function AdditionalService() {
                 informative content for your website to attract and retain
                 visitors.
               </p>
-              <p className="text-2xl font-bold">Starting at $100 per page</p>
+              <p className="text-2xl font-bold">
+                Starting at{" "}
+                <span className="text-[#ffcf40] text-shadow-[0_0_2px_#255036]">
+                  $100
+                </span>{" "}
+                per page
+              </p>
             </div>
           </div>
         </div>
