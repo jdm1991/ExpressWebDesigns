@@ -6,16 +6,16 @@ import {
   } from "react-icons/fa";
 
 export default function Payment(){
-    return(
-        <>
-         <div className="py-12">
+    return (
+      <>
+        <div className="py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold mb-8 text-center">
               Payment Methods
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {/* Payment Method 1 */}
-              <div className="bg-white text-[#255036] p-8 rounded-lg shadow-lg">
+              <div className="bg-white text-[#255036] p-8 rounded-lg shadow-[0_0_10px_rgba(37,80,54,0.3)]">
                 <FaCreditCard className="text-4xl text-[#ffcf40] mb-4" />
                 <h3 className="text-xl font-bold mb-4">Credit/Debit Card</h3>
                 <p>
@@ -25,7 +25,7 @@ export default function Payment(){
               </div>
 
               {/* Payment Method 2 */}
-              <div className="bg-white text-[#255036] p-8 rounded-lg shadow-lg">
+              <div className="bg-white text-[#255036] p-8 rounded-lg shadow-[0_0_10px_rgba(37,80,54,0.3)]">
                 <FaApplePay className="text-4xl text-[#ffcf40] mb-4" />
                 <h3 className="text-xl font-bold mb-4">Apple Pay</h3>
                 <p>
@@ -35,7 +35,7 @@ export default function Payment(){
               </div>
 
               {/* Payment Method 3 */}
-              <div className="bg-white text-[#255036] p-8 rounded-lg shadow-lg">
+              <div className="bg-white text-[#255036] p-8 rounded-lg shadow-[0_0_10px_rgba(37,80,54,0.3)]">
                 <FaBitcoin className="text-4xl text-[#ffcf40] mb-4" />
                 <h3 className="text-xl font-bold mb-4">Bitcoin</h3>
                 <p>
@@ -45,7 +45,7 @@ export default function Payment(){
               </div>
 
               {/* Payment Method 4 */}
-              <div className="bg-white text-[#255036] p-8 rounded-lg shadow-lg">
+              <div className="bg-white text-[#255036] p-8 rounded-lg shadow-[0_0_10px_rgba(37,80,54,0.3)]">
                 <FaPaypal className="text-4xl text-[#ffcf40] mb-4" />
                 <h3 className="text-xl font-bold mb-4">PayPal</h3>
                 <p>
@@ -56,6 +56,6 @@ export default function Payment(){
             </div>
           </div>
         </div>
-        </>
-    )
+      </>
+    );
 }

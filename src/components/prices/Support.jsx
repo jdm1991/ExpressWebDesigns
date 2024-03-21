@@ -6,11 +6,13 @@ import {
   } from "react-icons/fa";
 
 export default function Support() {
-    return(
-        <>
+    return (
+      <>
         <div className="bg-[#255036] text-white py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold mb-8 text-center">Support</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center text-[#ffcf40]">
+              Support
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Support Option 1 */}
               <div className="bg-white text-[#255036] p-8 rounded-lg shadow-lg">
@@ -52,6 +54,6 @@ export default function Support() {
             </div>
           </div>
         </div>
-        </>
-    )
+      </>
+    );
 }
