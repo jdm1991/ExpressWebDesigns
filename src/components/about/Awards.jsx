@@ -10,7 +10,7 @@ export default function Awards() {
               We are honored to have been recognized for our outstanding work in the web design and development industry. These awards are a testament to our commitment to excellence and our ability to deliver exceptional results for our clients.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-10">
             <div className="bg-white p-8 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
               <FaAward className="text-4xl text-[#ffcf40] mb-4" />
               <h3 className="text-xl font-bold mb-2">Best Web Design Agency 2023</h3>
