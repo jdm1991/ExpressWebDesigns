@@ -2,7 +2,7 @@
 export default function AboutAction(){
     return(
         <>
-         <div className="bg-[#255036] text-white py-12 rounded-lg shadow-lg">
+         <div className="bg-[#255036] text-white py-12 shadow-lg">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-8">Ready to Start Your Project?</h2>
             <p className="text-xl mb-8">
