@@ -7,16 +7,16 @@ export default function ProjectGrid(){
     const projects = [
         {
           id: 1,
-          title: 'E-commerce Website',
+          title: 'Land Rover Website',
           description: 'A fully functional e-commerce website with a sleek design and seamless user experience.',
-          technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
+          technologies: ['HTML', 'Tailwind', 'JavaScript', 'Next.js', 'Prisma', 'Node.js', 'Express', 'Postgres', 'Docker'],
           image: LandRover,
           githubLink: 'https://github.com/example/project1',
           liveLink: 'https://example.com/project1',
         },
         {
           id: 2,
-          title: 'Portfolio Website',
+          title: 'Luxury Motors Website',
           description: 'A stunning portfolio website showcasing the work and skills of a talented artist.',
           technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Prisma', 'Node.js', 'Express', 'MongoDB'],
           image: project1,
@@ -25,9 +25,9 @@ export default function ProjectGrid(){
         },
         {
           id: 3,
-          title: 'Task Management App',
+          title: 'Sky Estate website',
           description: 'An intuitive task management application to help users stay organized and productive.',
-          technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Prisma', 'Node.js', 'Express', 'Postgres'],
+          technologies: ['HTML', 'Tailwind', 'JavaScript', 'React', 'Prisma', 'Node.js', 'Express', 'Postgres'],
           image: project2,
           githubLink: 'https://github.com/example/project3',
           liveLink: 'https://example.com/project3',
