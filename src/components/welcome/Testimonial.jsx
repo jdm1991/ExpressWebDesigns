@@ -93,73 +93,81 @@ export default function Testimonial(){
         ];
 
         const PrevArrow = (props) => (
-            <button
-              {...props}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-[#255036] text-white p-2 rounded-full shadow-md hover:bg-[#ffcf40] hover:text-[#255036] transition duration-300 z-10"
-            >
-              <FaArrowLeft />
-            </button>
-          );
-          
-          const NextArrow = (props) => (
-            <button
-              {...props}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-[#255036] text-white p-2 rounded-full shadow-md hover:bg-[#ffcf40] hover:text-[#255036] transition duration-300 z-10"
-            >
-              <FaArrowRight />
-            </button>
-          );
-          
-          const settings = {
-            dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            prevArrow: <PrevArrow />,
-            nextArrow: <NextArrow />,
-          };
+          <button
+            {...props}
+            className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-[#255036] text-white p-2 rounded-full shadow-md hover:bg-[#ffcf40] hover:text-[#255036] transition duration-300 z-10"
+          >
+            <FaArrowLeft />
+          </button>
+        );
+      
+        const NextArrow = (props) => (
+          <button
+            {...props}
+            className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-[#255036] text-white p-2 rounded-full shadow-md hover:bg-[#ffcf40] hover:text-[#255036] transition duration-300 z-10"
+          >
+            <FaArrowRight />
+          </button>
+        );
+      
+        const settings = {
+          dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          prevArrow: <PrevArrow />,
+          nextArrow: <NextArrow />,
+          responsive: [
+            {
+              breakpoint: 640,
+              settings: {
+                arrows: false,
+              },
+            },
+          ],
+        };
 
     return(
         <>
-          <section className="bg-[#f5f5f5] py-16">
-  <div className="container mx-auto px-4">
-    <h2 className="text-3xl text-center md:text-4xl font-bold text-[#255036] mb-8">
-      What Our Clients Say
-    </h2>
-    <div className="max-w-4xl mx-auto px-8">
-      <Slider {...settings}>
-        {testimonials.map((testimonial) => (
-          <div key={testimonial.id} className="px-4">
-            <div className="bg-white p-8 rounded-lg shadow-md border-2 border-[#255036] transition duration-300 hover:shadow-lg">
-              <div className="flex items-center mb-6">
-                <img
-                  src={testimonial.avatar}
-                  alt="Client Avatar"
-                  className="w-16 h-16 rounded-full mr-4"
-                />
-                <div>
-                  <h4 className="text-xl font-bold">{testimonial.name}</h4>
-                  <p className="text-gray-600">{testimonial.company}</p>
+      <section className="bg-[#f5f5f5] py-12 sm:py-16">
+      <div className="container mx-auto px-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#255036] mb-6 sm:mb-8 text-center">
+          What Our Clients Say
+        </h2>
+        <div className="max-w-4xl mx-auto px-4 sm:px-8">
+          <Slider {...settings}>
+            {testimonials.map((testimonial) => (
+              <div key={testimonial.id} className="px-2 sm:px-4">
+                <div className="bg-white p-6 sm:p-8 rounded-lg shadow-md border-2 border-[#255036] transition duration-300 hover:shadow-lg">
+                  <div className="flex flex-col sm:flex-row items-center mb-6">
+                    <img
+                      src={testimonial.avatar}
+                      alt="Client Avatar"
+                      className="w-16 h-16  mr-0 sm:mr-4 mb-4 sm:mb-0"
+                    />
+                    <div>
+                      <h4 className="text-lg sm:text-xl font-bold">{testimonial.name}</h4>
+                      <p className="text-gray-600">{testimonial.company}</p>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-4">
+                    {testimonial.quote}
+                  </p>
+                  <div className="flex justify-end">
+                    <FaStar className="text-[#ffcf40] text-xl sm:text-2xl mr-1" />
+                    <FaStar className="text-[#ffcf40] text-xl sm:text-2xl mr-1" />
+                    <FaStar className="text-[#ffcf40] text-xl sm:text-2xl mr-1" />
+                    <FaStar className="text-[#ffcf40] text-xl sm:text-2xl mr-1" />
+                    <FaStar className="text-[#ffcf40] text-xl sm:text-2xl" />
+                  </div>
                 </div>
               </div>
-              <p className="text-gray-600 text-lg leading-relaxed mb-4">
-                {testimonial.quote}
-              </p>
-              <div className="flex justify-end">
-                <FaStar className="text-[#ffcf40] text-2xl mr-1" />
-                <FaStar className="text-[#ffcf40] text-2xl mr-1" />
-                <FaStar className="text-[#ffcf40] text-2xl mr-1" />
-                <FaStar className="text-[#ffcf40] text-2xl mr-1" />
-                <FaStar className="text-[#ffcf40] text-2xl" />
-              </div>
-            </div>
-          </div>
-        ))}
-      </Slider>
-    </div>
-  </div>
-</section>
+            ))}
+          </Slider>
+        </div>
+      </div>
+    </section>
         </>
     )
 }
