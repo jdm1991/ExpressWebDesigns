@@ -7,7 +7,7 @@ export default function PriceTable() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Basic Plan */}
-            <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col">
+            <div className="bg-white p-8 rounded-lg shadow-[0_0_10px_rgba(37,80,54,0.3)] flex flex-col">
               <div className="flex-grow">
                 <h2 className="text-2xl font-bold mb-4">Basic Plan</h2>
                 <p className="text-4xl font-bold mb-4">£999</p>
@@ -39,7 +39,7 @@ export default function PriceTable() {
             </div>
 
             {/* Standard Plan */}
-            <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col">
+            <div className="bg-white p-8 rounded-lg shadow-[0_0_10px_rgba(37,80,54,0.3)] flex flex-col">
               <div className="flex-grow">
                 <h2 className="text-2xl font-bold mb-4">Standard Plan</h2>
                 <p className="text-4xl font-bold mb-4">£1,999</p>
@@ -75,7 +75,7 @@ export default function PriceTable() {
             </div>
 
             {/* Premium Plan */}
-            <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col">
+            <div className="bg-white p-8 rounded-lg shadow-[0_0_10px_rgba(37,80,54,0.3)] flex flex-col">
               <div className="flex-grow">
                 <h2 className="text-2xl font-bold mb-4">Premium Plan</h2>
                 <p className="text-4xl font-bold mb-4">£3,999</p>
