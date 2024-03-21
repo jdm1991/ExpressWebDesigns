@@ -2,6 +2,12 @@ import { FaStar, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import icon1 from "../../assets/icon1.jpg";
+import icon4 from "../../assets/icon4.jpg";
+import icon2 from "../../assets/icon2.jpg";
+import icon5 from "../../assets/icon5.jpg";
+import icon3 from "../../assets/icon3.jpg";
+import icon6 from "../../assets/icon6.jpg";
 
 export default function Testimonial(){
 
@@ -11,85 +17,43 @@ export default function Testimonial(){
             name: 'John Doe',
             company: 'ABC Corporation',
             quote: 'The team at Web Design Studio exceeded our expectations. They created a stunning website that perfectly captures our brand identity and engages our target audience. Their professionalism and attention to detail were remarkable throughout the entire process.',
-            avatar: 'path/to/avatar1.jpg',
+            avatar: icon1,
           },
           {
             id: 2,
             name: 'Jane Smith',
             company: 'XYZ Industries',
             quote: 'We are thrilled with the website designed by Web Design Studio. They took the time to understand our business goals and delivered a website that not only looks great but also drives conversions. Their expertise in web design and development is truly impressive.',
-            avatar: 'path/to/avatar2.jpg',
+            avatar: icon4,
           },
           {
             id: 3,
             name: 'Michael Johnson',
             company: 'Tech Innovators',
             quote: 'Collaborating with Web Design Studio was a game-changer for our online presence. They created a modern and intuitive website that reflects our innovative spirit. Their team was responsive, creative, and dedicated to delivering results. We highly recommend their services.',
-            avatar: 'path/to/avatar3.jpg',
+            avatar: icon2,
           },
           {
             id: 4,
             name: 'Emily Davis',
             company: 'Fashion Boutique',
             quote: 'As a fashion boutique, we needed a website that showcases our products in the best possible way. Web Design Studio understood our vision and created a visually stunning website that perfectly represents our brand. They made the entire process smooth and enjoyable.',
-            avatar: 'path/to/avatar4.jpg',
+            avatar: icon5,
           },
           {
             id: 5,
             name: 'Robert Wilson',
             company: 'Health and Wellness Co.',
             quote: 'Web Design Studio helped us establish a strong online presence in the health and wellness industry. Their team created a website that is informative, user-friendly, and visually appealing. They were responsive to our needs and delivered the project on time and within budget.',
-            avatar: 'path/to/avatar5.jpg',
+            avatar: icon3,
           },
           {
             id: 6,
             name: 'Sarah Thompson',
             company: 'Education Solutions',
             quote: 'We are extremely satisfied with the website created by Web Design Studio for our educational institution. They designed a website that is engaging, interactive, and easy to navigate. Their attention to detail and commitment to quality are evident in every aspect of the project.',
-            avatar: 'path/to/avatar6.jpg',
-          },
-          {
-            id: 7,
-            name: 'David Anderson',
-            company: 'Marketing Experts',
-            quote: 'Web Design Studio transformed our outdated website into a modern and dynamic platform. Their team understood our marketing objectives and created a website that effectively communicates our message and engages our target audience. We have seen a significant increase in traffic and leads since the launch.',
-            avatar: 'path/to/avatar7.jpg',
-          },
-          {
-            id: 8,
-            name: 'Jessica Rodriguez',
-            company: 'Event Planners Inc.',
-            quote: 'We hired Web Design Studio to create a website for our event planning business, and they exceeded our expectations. The website beautifully showcases our services, portfolio, and testimonials. Their team was professional, responsive, and easy to work with throughout the development process.',
-            avatar: 'path/to/avatar8.jpg',
-          },
-          {
-            id: 9,
-            name: 'Thomas Lee',
-            company: 'Restaurant Chain',
-            quote: 'Web Design Studio created a stunning website for our restaurant chain. The website perfectly captures the essence of our brand and provides an immersive experience for our customers. The team was creative, attentive to details, and delivered the project within the agreed timeline. We are extremely happy with the results.',
-            avatar: 'path/to/avatar9.jpg',
-          },
-          {
-            id: 10,
-            name: 'Amanda Brown',
-            company: 'Fitness Studio',
-            quote: 'We approached Web Design Studio to create a website for our fitness studio, and they delivered beyond our expectations. The website is visually appealing, user-friendly, and effectively communicates our brand message. Their team was knowledgeable, responsive, and provided valuable insights throughout the project.',
-            avatar: 'path/to/avatar10.jpg',
-          },
-          {
-            id: 11,
-            name: 'Mark Davis',
-            company: 'Consulting Firm',
-            quote: 'Web Design Studio created a professional and modern website for our consulting firm. The website effectively showcases our services, expertise, and client testimonials. Their team was attentive to our needs, provided regular updates, and delivered a high-quality website that meets our business objectives.',
-            avatar: 'path/to/avatar11.jpg',
-          },
-          {
-            id: 12,
-            name: 'Laura Wilson',
-            company: 'E-commerce Store',
-            quote: 'We partnered with Web Design Studio to create an e-commerce website for our online store. The team did an outstanding job in designing a user-friendly and visually appealing website that seamlessly integrates with our product catalog. The website has significantly improved our online sales and customer engagement.',
-            avatar: 'path/to/avatar12.jpg',
-          },
+            avatar: icon6,
+          }
         ];
 
         const PrevArrow = (props) => (
