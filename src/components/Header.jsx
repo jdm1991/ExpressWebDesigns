@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   Home,
   HardDrive,
@@ -31,58 +31,64 @@ export default function Header() {
         <nav className="hidden xl:flex items-center h-full">
           <ul className="flex">
             <li className="group">
-              <Link
+              <NavLink
                 to="/"
+                activeClassName="active"
                 className="flex flex-col gap-1.5 items-center justify-center h-14 w-40 text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
               >
                 <Home />
                 <span>Home</span>
-              </Link>
+              </NavLink>
             </li>
             <li className="group">
-              <Link
+              <NavLink
                 to="/about"
+                activeClassName="active"
                 className="flex flex-col gap-1.5 items-center justify-center h-14 w-40 text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
               >
                 <HardDrive />
                 <span>About</span>
-              </Link>
+              </NavLink>
             </li>
             <li className="group">
-              <Link
+              <NavLink
                 to="/service"
+                activeClassName="active"
                 className="flex flex-col gap-1.5 items-center justify-center h-14 w-40 text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
               >
                 <List />
                 <span>Services</span>
-              </Link>
+              </NavLink>
             </li>
             <li className="group">
-              <Link
+              <NavLink
                 to="/project"
+                activeClassName="active"
                 className="flex flex-col gap-1.5 items-center justify-center h-14 w-40 text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
               >
                 <Folder />
                 <span>Projects</span>
-              </Link>
+              </NavLink>
             </li>
             <li className="group">
-              <Link
+              <NavLink
                 to="/prices"
+                activeClassName="active"
                 className="flex flex-col gap-1.5 items-center justify-center h-14 w-40 text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
               >
                 <DollarSign />
                 <span>Prices</span>
-              </Link>
+              </NavLink>
             </li>
             <li className="group">
-              <Link
+              <NavLink
                 to="/contact"
+                activeClassName="active"
                 className="flex flex-col gap-1.5 items-center justify-center h-14 w-40 text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
               >
                 <Mail />
                 <span>Contact</span>
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>
@@ -97,64 +103,70 @@ export default function Header() {
         <div className="xl:hidden bg-[#255036] text-white px-8 py-4 fixed top-20 right-0 w-full z-50 transition-all duration-300 ease-in-out">
           <ul className="flex flex-col space-y-4">
             <li>
-              <Link
+              <NavLink
                 to="/"
+                activeClassName="active"
                 className="flex items-center text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
                 onClick={toggleMenu}
               >
                 <Home className="mr-2" />
                 <span>Home</span>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/about"
+                activeClassName="active"
                 className="flex items-center text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
                 onClick={toggleMenu}
               >
                 <HardDrive className="mr-2" />
                 <span>About</span>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/service"
+                activeClassName="active"
                 className="flex items-center text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
                 onClick={toggleMenu}
               >
                 <List className="mr-2" />
                 <span>Services</span>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/project"
+                activeClassName="active"
                 className="flex items-center text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
                 onClick={toggleMenu}
               >
                 <Folder className="mr-2" />
                 <span>Projects</span>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/prices"
+                activeClassName="active"
                 className="flex items-center text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
                 onClick={toggleMenu}
               >
                 <DollarSign className="mr-2" />
                 <span>Prices</span>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/contact"
+                activeClassName="active"
                 className="flex items-center text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
                 onClick={toggleMenu}
               >
                 <Mail className="mr-2" />
                 <span>Contact</span>
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
