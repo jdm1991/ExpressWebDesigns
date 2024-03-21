@@ -57,7 +57,7 @@ export default function ServicePage(){
             We follow a structured and collaborative process to ensure the success of your web design project. Here's how we work:
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-10">
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <FaCheckCircle className="text-4xl text-[#ffcf40] mb-4" />
             <h3 className="text-xl font-bold mb-2">1. Discovery</h3>

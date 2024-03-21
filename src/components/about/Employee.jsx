@@ -9,7 +9,7 @@ export default function Employees(){
             Meet the talented individuals who make up our team. Their skills, dedication, and passion for web design and development are the driving force behind our success.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-10">
           <div className="bg-white p-8 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
             <FaUserTie className="text-4xl text-[#ffcf40] mb-4" />
             <h3 className="text-xl font-bold mb-2">Jack Miller</h3>
