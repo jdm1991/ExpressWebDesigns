@@ -10,6 +10,7 @@ import {
   Menu,
   X,
 } from "react-feather";
+import logo from "../../public/logo.svg"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ export default function Header() {
       <div className="bg-[#255036] text-right text-white px-8 sticky top-0 left-0 right-0 shadow-lg flex items-center justify-between h-20 z-50">
         <div className="text-lg font-bold flex items-center">
           <img
-            src="public/1_SVG.svg"
+            src={logo}
             alt="Pic2"
             className="logo-image h-80 w-auto"
           />
