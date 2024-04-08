@@ -10,7 +10,7 @@ import {
   Menu,
   X,
 } from "react-feather";
-import logo from "../../public/logo.svg"
+import logo from "../../public/logo.svg";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,13 +21,9 @@ export default function Header() {
 
   return (
     <>
-      <div className="bg-[#255036] text-right text-white px-8 sticky top-0 left-0 right-0 shadow-lg flex items-center justify-between h-20 z-50">
+      <div className="bg-[#255036] text-right text-white px-8 sticky top-0 left-0 right-0 shadow-lg flex items-center justify-between h-20 z-50 border-b border-[rgba(255,207,64,0.5)]">
         <div className="text-lg font-bold flex items-center">
-          <img
-            src={logo}
-            alt="Pic2"
-            className="logo-image h-80 w-auto"
-          />
+          <img src={logo} alt="Pic2" className="logo-image h-80 w-auto" />
         </div>
         <nav className="hidden xl:flex items-center h-full">
           <ul className="flex">
