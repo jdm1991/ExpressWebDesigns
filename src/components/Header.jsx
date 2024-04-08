@@ -49,22 +49,22 @@ export default function Header() {
             </li>
             <li className="group">
               <NavLink
-                to="/service"
-                activeClassName="active"
-                className="flex flex-col gap-1.5 items-center justify-center h-14 w-40 text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
-              >
-                <List />
-                <span>Services</span>
-              </NavLink>
-            </li>
-            <li className="group">
-              <NavLink
                 to="/project"
                 activeClassName="active"
                 className="flex flex-col gap-1.5 items-center justify-center h-14 w-40 text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
               >
                 <Folder />
                 <span>Projects</span>
+              </NavLink>
+            </li>
+            <li className="group">
+              <NavLink
+                to="/service"
+                activeClassName="active"
+                className="flex flex-col gap-1.5 items-center justify-center h-14 w-40 text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
+              >
+                <List />
+                <span>Services</span>
               </NavLink>
             </li>
             <li className="group">
@@ -123,17 +123,6 @@ export default function Header() {
             </li>
             <li>
               <NavLink
-                to="/service"
-                activeClassName="active"
-                className="flex items-center text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
-                onClick={toggleMenu}
-              >
-                <List className="mr-2" />
-                <span>Services</span>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
                 to="/project"
                 activeClassName="active"
                 className="flex items-center text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
@@ -141,6 +130,17 @@ export default function Header() {
               >
                 <Folder className="mr-2" />
                 <span>Projects</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/service"
+                activeClassName="active"
+                className="flex items-center text-white uppercase transition-all duration-500 ease-in-out no-underline hover:text-[#ffcf40]"
+                onClick={toggleMenu}
+              >
+                <List className="mr-2" />
+                <span>Services</span>
               </NavLink>
             </li>
             <li>

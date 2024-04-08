@@ -19,7 +19,7 @@ export default function ServicePage() {
        <Process />
 
         {/* Section 3: Pricing */}
-     <Price />
+     {/* <Price /> */}
 
         {/* Section 4: Support */}
     <Support />
