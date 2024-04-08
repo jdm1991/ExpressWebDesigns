@@ -155,7 +155,7 @@ export default function Header() {
                 onClick={toggleMenu}
               >
                 <DollarSign className="mr-2" />
-                <span>Prices</span>
+                <span>Pricing</span>
               </NavLink>
             </li>
             <li>
